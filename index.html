@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row-box">
+            <div class="row">
+                <div>
+                    <label for="zip">
+                        PLZ
+                    </label>
+                    <input id="zip" type="text" placeholder="81541">
+                </div>
+                <div class="width-70">
+                    <label for="city">
+                        Stadt
+                    </label>
+                    <input id="city" type="text" placeholder="München">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="street">
+                        Straße
+                    </label>
+                    <input id="street" type="text" placeholder="Werinherstraße">
+                </div>
+                <div>
+                    <label for="nr">
+                        Hausnummer
+                    </label>
+                    <input id="nr" type="number" placeholder="12">
+                </div>
+            </div>
+            <div class="row">
+                <label for="country">
+                    Land
+                </label>
+                <input id="country" type="text" value="de-Deutschland" disabled>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
