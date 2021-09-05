@@ -10,44 +10,34 @@
 </head>
 
 <body>
+   
     <div class="container">
-        <div class="row-box">
-            <div class="row">
-                <div>
-                    <label for="zip">
-                        PLZ
-                    </label>
-                    <input id="zip" type="text" placeholder="81541">
-                </div>
-                <div class="width-70">
-                    <label for="city">
-                        Stadt
-                    </label>
-                    <input id="city" type="text" placeholder="München">
-                </div>
+        <div class="row d-flex space-between">
+            <div class="d-flex align-center">
+                <div class="label">PLZ</div>
+                <input id="zipcode" placeholder="81541" type="number">
             </div>
-            <div class="row">
-                <div>
-                    <label for="street">
-                        Straße
-                    </label>
-                    <input id="street" type="text" placeholder="Werinherstraße">
-                </div>
-                <div>
-                    <label for="nr">
-                        Hausnummer
-                    </label>
-                    <input id="nr" type="number" placeholder="12">
-                </div>
-            </div>
-            <div class="row">
-                <label for="country">
-                    Land
-                </label>
-                <input id="country" type="text" value="de-Deutschland" disabled>
+            <div class="d-flex align-center">
+                <div class="label">Stadt</div>
+                <input id="city" class="w-400" placeholder="München" type="text">
             </div>
         </div>
+        <div class="row d-flex space-between">
+            <div class="d-flex align-center">
+                <div class="label">Straße</div>
+                <input id="street" class="w-400" placeholder="Werinherstraße" type="text">
+            </div>
+            <div class="d-flex align-center">
+                <div class="label">Hausnummer</div>
+                <input id="housenumber" placeholder="12" type="number">
+            </div>
+        </div>
+        <div class="row d-flex align-center full-width">
+            <div class="label">Land</div>
+            <input class="full-width" value="De - Deutschland" disabled>
+        </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>
