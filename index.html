@@ -16,30 +16,31 @@
             <div class="row d-flex space-between">
                 <div class="d-flex align-center">
                     <div class="label">PLZ</div>
-                    <input id="plz" name="plz" placeholder="81541" type="number" onkeyup="findCity()">
+                    <input id="plz" min="0" name="plz" placeholder="PLZ eingeben..." type="number" onkeyup="findCity()">
                 </div>
                 <div class="d-flex align-center">
                     <div class="label">Stadt</div>
-                    <input id="city" name="city" class="w-400" placeholder="München" type="text">
+                    <input id="city" name="city" placeholder="Stadt" class="w-400" type="text">
                 </div>
             </div>
             <div class="row d-flex space-between">
                 <div class="d-flex align-center">
                     <div class="label">Straße</div>
-                    <input id="street" name="street" class="w-400" placeholder="Werinherstraße" type="text"
+                    <input list="streets" id="street" name="street" class="w-400" placeholder="Straße eingeben..." type="search" autocomplete="off"
                         onkeyup="findStreet(plz.value)">
                 </div>
                 <div class="d-flex align-center">
                     <div class="label">Hausnummer</div>
-                    <input id="housenumber" name="" placeholder="12" type="number">
+                    <input id="housenumber" min="1" name="" placeholder="HausNr." type="number">
                 </div>
             </div>
             <div class="row d-flex align-center full-width">
                 <div class="label">Land</div>
                 <input class="full-width" value="De - Deutschland" disabled>
             </div>
-            <input type="submit" class="btn">
-            <button class="btn" onclick="findCity()">Senden</button>
+            <!-- <input type="submit" class="btn"> -->
+            <datalist id="streets"></datalist>
+
         </form>
     </div>
 
